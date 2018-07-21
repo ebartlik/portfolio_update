@@ -1,0 +1,155 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    
+    background-image: url("assets/portfolio_img2.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+    
+}
+
+#project-header{
+    font-family:serif;
+}
+
+#name{
+    font-size: 40pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+    position: relative;
+    right: 120px;
+    
+    
+}
+
+#intro{
+    font-size: 40pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 20px;
+}
+
+#github{
+    position: relative;
+}
+
+ .container{
+    
+    height: 900px;
+    width: 100%;
+    max-width: 1600px; 
+    text-align: center;
+    background: black;
+    margin: 0;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+ }
+
+ .project-title{
+     font-size: 12pt;
+     color: white;
+    
+ }
+
+ .project-title:hover{
+    font-family: 'Lobster', cursive;
+
+   
+ }
+
+ a{
+     color: white;
+     font-family: serif;
+ }
+ a:hover{
+    font-family: 'Lobster', cursive;
+    color: white;
+ }
+
+
+ #description{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 10pt;
+ }
+
+
+ linkOne linkTwo linkThree linkFour:hover{
+    font-family: 'Lobster', cursive;
+
+ }
+
+ 
+.img-thumbnail:hover{
+border: black;
+}
+
+.icon{
+    height: 349px;
+    width: 349px;
+    opacity:.8
+}
+
+.icon:hover{
+    opacity:1;
+    border-radius:50%;
+}
+
+.img-thumbnail{
+    position:relative;
+}
+
+
+#linkOne{
+    position:absolute;
+    bottom: -60px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+#linkTwo{
+    position:absolute;
+    bottom: -30px;
+    margin-left: 150px;
+}
+
+#github{
+color: white;
+font-family: 'Courier New', Courier, monospace;
+text-align:center;
+font-size: 14pt;
+position: relative;
+right: 210px;
+}
+
+#linkedin{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    font-size: 14pt;
+    position: relative;
+    right: 155px;
+    }
+
+.navigation{
+    background: black;
+    height: 50px;
+}
+
+ .topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+

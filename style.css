@@ -1,6 +1,10 @@
 body, html {
     height: 100%;
     margin: 0;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+
 }
 
 .bg {
@@ -11,9 +15,20 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-   
+    border:15px solid  #333;
+    
     
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .bg {
+    padding-top: 60px;
+  }
 
 #project-header{
     font-family:serif;
@@ -44,19 +59,7 @@ body, html {
     position: relative;
 }
 
- .container{
-    
-    height: 900px;
-    width: 100%;
-    max-width: 1600px; 
-    text-align: center;
-    background: black;
-    margin: 0;
-    color: white;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    
- }
+
 
  .project-title{
      font-size: 12pt;
@@ -112,17 +115,36 @@ border: black;
 }
 
 
+.container{
+    
+    height: 900px;
+    width: 100%;
+    max-width: 1650px; 
+    text-align: center;
+    background:hsl(0, 0%, 35%);
+    margin: auto;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    
+ }
+
 #linkOne{
     position:absolute;
-    bottom: -60px;
-    text-align: center;
-    margin-left: 150px;
+    bottom: -60px; 
+    /* text-align: center; */
+    margin-left: 150px; 
 }
 
 #linkTwo{
-    position:absolute;
+     position:absolute;
     bottom: -30px;
     margin-left: 150px;
+}
+
+#project-header{
+    text-align: center;
 }
 
 #github{
@@ -143,13 +165,306 @@ right: 210px;
     right: 155px;
     }
 
-.navigation{
-    background: black;
-    height: 50px;
-}
 
- .topnav {
-    background-color: #333;
+
+
+    #projects-nav, #contact-nav{
+
+        font-size: 20pt;
+        margin-left: 20px;
+
+    }
+    
+#contact-scroll{
+    color:white;
+    width: 4%;
+    position: relative;
+    left: 110px;
+    top: -35px; 
+    font-size: 18pt;
+    
+}   
+
+#project-scroll:hover{
+    font-family: 'Lobster', cursive;
+   
+    
+ }
+
+ #contact-scroll:hover{
+    font-family: 'Lobster', cursive;
+ }
+
+ .navbar-brand{
+     background: black;
+     width: 100%;
+     vertical-align: auto;
+     height: 90px;
+     overflow: hidden;
+  
+
+ } 
+
+ #navbar {
     overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+
+ .sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+  
+
+   .sticky + .container {
+    padding-top: 60px;
+  } 
+
+ @media screen and (max-width: 980px) {
+     body{
+         width: 90%;
+         height: 100%;
+     }
+    }
+
+.contact-page{
+    background: rgb(120, 120, 120);
 }
 
+
+
+#contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 80%;
+    margin-left: 125px;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+
+  #contact-container{
+      background:#333;
+  }
+
+
+  @media screen and (max-width: 980px) {
+    #container {
+        width:80%;
+        height: auto;
+         float:left; 
+        margin-bottom:150px;
+        margin-left:30px;
+        margin-top:0px;
+    }
+
+    #contact-nav, #projects-nav{
+        font-size: 16pt;
+    }
+
+    #name, #intro{
+        font-size: 18pt;
+    }
+    #github, #linkedin{
+        font-size: 12pt;
+        position: relative;
+    }
+    #project-header{
+        font-size: 20pt;
+        position: relative;
+        top: -60px;
+    }
+    .project-title{
+        font-size: 10pt;
+        position: relative;
+        top: -100px;
+    }
+    .icon{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -100px;
+    }
+    
+    #description{
+        position: relative;
+        top: -100px;
+        font-size: 8pt;
+    }
+
+    #linkOne{
+        position: absolute;
+        left: 230px;
+        top: 50px;
+        text-align: center;
+        
+    }
+    #linkTwo{
+        position: absolute;
+        left: 235px;
+        top: 70px;
+        text-align: center;
+    }
+    #projectTwo{
+        position: relative;
+        top: 20px;
+    }
+    #projectThree{
+        position: relative;
+        top: -30px;
+    }
+    #projectFour{
+        position: relative;
+        top: -70px;
+    }
+    #contact-header{
+        font-size: 20pt;
+        position: relative;
+        top: -30px;
+    }
+    ul{
+        position: relative;
+        right: 70px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .icon{
+        position: relative;
+    }
+
+    #linkOne{
+        position: absolute;
+        left: 0px;
+        margin-left: 310px;
+        
+       
+    }
+    #linkTwo{
+        position: absolute;
+        left: 0px;
+        margin-left: 315px;
+       
+    }
+    #project-header{
+        font-size: 20pt;
+        position: relative;
+        top: -60px;
+    }
+    .project-title{
+        font-size: 10pt;
+        position: relative;
+        top: -100px;
+    }
+    .icon{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -100px;
+    }
+    
+    #description{
+        position: relative;
+        top: -100px;
+        font-size: 8pt;
+    }
+    #projectTwo{
+        position: relative;
+        /* top: -80px; */
+    }
+    #projectThree{
+        position: relative;
+        /* top: -30px; */
+    }
+    #projectFour{
+        position: relative;
+        /* top: -70px; */
+
+}
+    a{
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+   
+
+    #linkOne{
+        position: absolute;
+        font-size: 8pt;
+        top: -50px;
+        left: -280px;
+       
+    }
+    #linkTwo{
+       position: absolute;
+       font-size: 8pt;
+       top: -30px;
+        left: -282px;
+    }
+
+    .project-title{
+        font-size: 10pt;
+    }
+    
+    a{
+        margin-left: 300px;
+        font-size: 6pt;
+    }
+
+    #contact-form{
+        float: left;
+        margin-left: 50px;
+    }
+    #submit{
+      margin-left: 95px;  
+    }
+}
